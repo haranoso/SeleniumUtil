@@ -1,8 +1,8 @@
 # sfTestToolforCommunity
 
 Seleniumでテストコードを書くためのベース。  
-  1)chrome  
-  2)firefox  
+-  1)chrome  
+-  2)firefox  
 のWebdriverに対応。  
 Utilityにいくつかメソッドがあります。  
 スクロール、スクリーンショット、クリックなど。  
