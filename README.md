@@ -1,7 +1,12 @@
 # SalasForceのテストをSeleniumで実行するためのUtilityが欲しくて作成した。
 
-現在以下のWebdriverに対応。  
+必要環境
+1) Node.js
+2) Sfdx Cli
+3) Git bash
 
+
+現在以下のWebdriverに対応。  
 -  1)chrome  
 -  2)firefox  
 
@@ -10,7 +15,6 @@
 
 随時追加予定。  
 適当なフォルダに移動。
-0)　Node.jsをインストール
 1) `clone {repositry}`  
 2) `npm install`  
 3) `node ./src/sample.js chrome`  
