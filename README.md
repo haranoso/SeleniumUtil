@@ -1,7 +1,6 @@
-# sfTestToolforCommunity
+# SalasForceのテストをSeleniumで実行するためのUtilityが欲しくて作成した。
 
-Seleniumでテストコードを書くためのベース。  
-以下ののWebdriverに対応。  
+現在以下のWebdriverに対応。  
 
 -  1)chrome  
 -  2)firefox  
