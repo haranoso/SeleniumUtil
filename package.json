@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "chromedriver": "^79.0.0",
+    "date-utils": "^1.2.21",
     "geckodriver": "^1.19.1",
     "selenium-webdriver": "^4.0.0-alpha.5"
   },
