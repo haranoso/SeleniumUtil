@@ -21,7 +21,7 @@ Salesforceのテストとして利用する場合。
 2)force-appのある階層と同じ場所にClone
 3)テストコードを記載
 
-このとき、utilities、Sfdxコマンドをコールすることができます。  
+このとき、utilityのメソッドを利用して、Sfdxコマンドをコールすることができます。  
 
 `users = u.callCommandJson('sfdx force:data:soql:query -q "select Id , Name from Contact order by createdDate desc" -r json').result.records;`  
 
