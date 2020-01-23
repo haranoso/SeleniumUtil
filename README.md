@@ -27,23 +27,29 @@ Salesforceのテストとして利用する場合。
 3)テストコードを記載
 
 以下のような構成を想定
-    org
-    |--config
-    |--force-app
-    |  |--main
-    |  |  |--default
-    |--manifest
-★  |--SfTestBySelenium
-★  |  |--package.json
-★  |  |--lib //ここにライブラリを配置
-★  |  |--node_modules //　npm installしたら配置される
-★  |  |--src //ここにテストコードなどを配置
+    
+        org  
+        |--config  
+        |--force-app  
+        |  |--main  
+        |  |  |--default  
+        |--manifest  
+    ★  |--SfTestBySelenium  
+    ★  |  |--package.json  
+    ★  |  |--lib //ライブラリはここ  
+    ★  |  |--node_modules //　npm installしたら配置される  
+    ★  |  |--src //ここにテストコードなどを配置  
+    
 
-
-このとき、utilityのメソッドを利用して、Sfdxコマンドをコールすることができます。  
-
+上記配置かつ、SFDX Cliインストール済みであれば、テストコード中にutilityのメソッドを利用して、SOQLをコールすることができます。  
 `users = u.soql("select Id , Name from Contact order by createdDate desc")
 console.log(users[0].id);`  
+結果がParse済みのオブジェクトとして取得できます。
 
-結果がParse済みのオブジェクトとして取得できるので、画面の入力に使用するもよし、操作の結果があっていることを確認するのに使用するもよし。
+
+または、以下のようにコマンドを実行することも可能です。
+`ret = u.callCommand('some command');　// コマンド実行結果を取得`
+`ret = u.callCommandJson('some command'); // JSONをパースした結果を取得`
+
+
       
