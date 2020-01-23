@@ -1,4 +1,4 @@
-# SalasForceのテストをSeleniumで実行するためのUtilityが欲しくて作成した。
+# SalasForceのテストをSeleniumで実行するためのUtility
 
 必要環境
 1) Node.js
