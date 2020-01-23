@@ -17,8 +17,8 @@
 適当なフォルダに移動。
 1) `clone {repositry}`  
 2) `npm install`  
-3) `node ./src/sample.js chrome`  
-4) `node ./src/sample.js firefox`  
+3) `node sample.js chrome`  
+4) `node sample.js firefox`  
 
 Salesforceのテストとして利用する場合。
 1)SfdxCliをインストール、設定。
