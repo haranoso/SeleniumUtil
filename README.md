@@ -49,7 +49,7 @@ console.log(users[0].id);`
 
 
 または、以下のようにコマンドを実行することも可能です。  
-`ret = u.callCommand('some command');　// コマンド実行結果を取得`
+`ret = u.callCommand('some command');　// コマンド実行結果を取得`  
 `ret = u.callCommandJson('some command'); // JSONをパースした結果を取得`
 
 
