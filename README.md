@@ -43,7 +43,7 @@ Salesforceのテストとして利用する場合。
     
 
 上記配置かつ、SFDX Cliインストール済みであれば、テストコード中にutilityのメソッドを利用して、SOQLをコールすることができます。  
-`users = u.soql("select Id , Name from Contact order by createdDate desc")
+`users = u.soql("select Id , Name from Contact order by createdDate desc");  
 console.log(users[0].id);`  
 結果がParse済みのオブジェクトとして取得できます。
 
