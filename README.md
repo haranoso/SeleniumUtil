@@ -3,8 +3,8 @@
 必要環境
 1) Node.js
 2) Sfdx Cli
-3) Git bash
-4) Visual Studio Code
+3) Visual Studio Code
+4) Git bash(Windowsのみ)  
 
 
 現在以下のWebdriverに対応。  
