@@ -17,9 +17,10 @@
 随時追加予定。  
 適当なフォルダに移動。
 1) `clone {repositry}`  
-2) `npm install`  
-3) `node sample.js chrome`  
-4) `node sample.js firefox`  
+2) `cd SFTestBySelenium`
+3) `npm install`  
+4) `node sample.js chrome`  
+5) `node sample.js firefox`  
 
 Salesforceのテストとして利用する場合。
 1)SfdxCliをインストール、設定。
