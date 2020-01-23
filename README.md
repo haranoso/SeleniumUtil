@@ -48,7 +48,7 @@ console.log(users[0].id);`
 結果がParse済みのオブジェクトとして取得できます。
 
 
-または、以下のようにコマンドを実行することも可能です。
+または、以下のようにコマンドを実行することも可能です。  
 `ret = u.callCommand('some command');　// コマンド実行結果を取得`
 `ret = u.callCommandJson('some command'); // JSONをパースした結果を取得`
 
