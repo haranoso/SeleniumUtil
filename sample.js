@@ -43,7 +43,7 @@ async function testMain (browser){
             await u.scrollBy(By.id("pnnext"));
             await u.takeScr(scrDir,name+'-003.jpg');
 
-            await driver.findElement(By.id("pnnext")).click();
+            await u.clickBy(By.id("pnnext"));
             await u.takeScr(scrDir,name+'-004.jpg');
 
             await driver.wait(until.elementLocated(By.id("pnnext")));
