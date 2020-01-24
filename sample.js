@@ -39,14 +39,14 @@ async function testMain (browser){
             await driver.findElement(By.name("q")).sendKeys('selenium javascript',Key.ENTER);
             await u.takeScr(scrDir,name+'-002.jpg');
         
-            await u.waitForLoadBy(By.name('pnnext'),12000);
+            await u.waitForLoadBy(By.id('pnnext'),12000);
             await u.scrollBy(By.id("pnnext"));
             await u.takeScr(scrDir,name+'-003.jpg');
 
             await u.clickBy(By.id("pnnext"));
             await u.takeScr(scrDir,name+'-004.jpg');
 
-            await u.waitForLoadBy(By.name('pnnext'),13000);
+            await u.waitForLoadBy(By.id('pnnext'),13000);
             await u.takeScr(scrDir,name+'-005.jpg');
 
             var elmlast = null;
