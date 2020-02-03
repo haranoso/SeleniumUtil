@@ -1,11 +1,12 @@
-# SalesForceのテストをSeleniumで実行するためのUtility
+# SeleniumでのTestコードを記載するためのUtility
 
 必要環境
 1) Node.js
-2) Sfdx Cli
-3) Visual Studio Code
-4) Git bash(Windowsのみ)  
+2) Visual Studio Code
+3) Git bash(Windowsのみ)
 
+Salesforceのテストする場合はあるといいかも環境
+4) Sfdx Cli
 
 現在以下のWebdriverに対応。  
 -  1)chrome  
@@ -42,7 +43,7 @@ Salesforceのテストとして利用する場合。
     ★  |  |--package.json  
     ★  |  |--lib //ライブラリはここ  
     ★  |  |--node_modules //　npm installしたら配置される  
-    ★  |  |--src //ここにテストコードなどを配置  
+    ★  |  |--//ここにテストコードなどを配置  
     
 
 上記配置かつ、SFDX Cliインストール済みであれば、テストコード中にTestUtilのメソッドを利用して、SOQLをコールすることができます。  
@@ -59,9 +60,9 @@ Slackを利用する場合、事前にSlackへBotアプリの作成が必要で�
 投稿するチャンネルのメンバーにアプリを追加しておく必要もあります。
 実行前に以下の環境変数を登録しておく必要があります。
 
-export SLACK_TOKEN='bot-token'
-export SLACK_CHANNEL='channel name'
-export SLACK_SECRET_KEY='secret-key'
-export SLACK_POST_IMAGE='true'
+SLACK_TOKEN='bot-token'
+SLACK_CHANNEL='channel name'
+SLACK_SECRET_KEY='secret-key'
+SLACK_POST_IMAGE='true'//POSTのONOFF切り替え、IMAGEと書いてあるけどTEXTも抑止します。
 
       
