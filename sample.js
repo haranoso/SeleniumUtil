@@ -1,4 +1,4 @@
-const Utils = require('./lib/utility');
+const Utils = require('./lib/TestUtil');
 require('chromedriver');
 require('geckodriver');
 
