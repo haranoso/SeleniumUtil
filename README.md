@@ -5,13 +5,13 @@
 2) Visual Studio Code
 3) Git bash(Windowsのみ)
 
-Salesforceのテストする場合はあるといいかも環境
+Salesforceのテストする場合はあるといいかも環境  
 4) Sfdx Cli
 
 現在以下のWebdriverに対応。  
 -  1)chrome  
 -  2)firefox  
--  3)safari(PC)  
+-  3)safari(PC)※Macが必要。
 
 /lib/testUtil  : スクロール、スクリーンショット、クリックなど。  
 /lib/fileUtil  : ファイルの検索、ディレクトリの検索など  
@@ -21,7 +21,7 @@ Salesforceのテストする場合はあるといいかも環境
 随時追加予定。  
 適当なフォルダに移動。
 1) `clone {repositry}`  
-2) `cd SFTestBySelenium`
+2) `cd SeleniuUtil`
 3) `npm install`  
 4) `node sample.js chrome`  
 5) `node sample.js firefox`  
@@ -39,11 +39,11 @@ Salesforceのテストとして利用する場合。
         |  |--main  
         |  |  |--default  
         |--manifest  
-    ★  |--SfTestBySelenium  
+    ★  |--SeleniuUtil  
     ★  |  |--package.json  
     ★  |  |--lib //ライブラリはここ  
     ★  |  |--node_modules //　npm installしたら配置される  
-    ★  |  |--//ここにテストコードなどを配置  
+    ★  |  |--hogehoge.js//ここにテストコードなどを配置  
     
 
 上記配置かつ、SFDX Cliインストール済みであれば、テストコード中にTestUtilのメソッドを利用して、SOQLをコールすることができます。  
