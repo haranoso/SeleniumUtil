@@ -46,23 +46,23 @@ Salesforceのテストとして利用する場合。
     ★  |  |--hogehoge.js//ここにテストコードなどを配置  
     
 
-上記配置かつ、SFDX Cliインストール済みであれば、テストコード中にTestUtilのメソッドを利用して、SOQLをコールすることができます。  
-`users = u.soql("select Id , Name from Contact order by createdDate desc");  
-console.log(users[0].id);`  
-結果がParse済みのオブジェクトとして取得できます。
+上記配置かつ、SFDX Cliインストール済みであれば、テストコード中にTestUtilのメソッドを利用して、SOQLをコールすることができます。    
+`users = u.soql("select Id , Name from Contact order by createdDate desc");    
+console.log(users[0].id);`    
+結果がParse済みのオブジェクトとして取得できます。  
 
 
-または、以下のようにコマンドを実行することも可能です。  
-`ret = u.callCommand('some command');　// コマンド実行結果を取得`  
-`ret = u.callCommandJson('some command'); // JSONをパースした結果を取得`
+または、以下のようにコマンドを実行することも可能です。    
+`ret = u.callCommand('some command');　// コマンド実行結果を取得`    
+`ret = u.callCommandJson('some command'); // JSONをパースした結果を取得`  
 
-Slackを利用する場合、事前にSlackへBotアプリの作成が必要です。
-投稿するチャンネルのメンバーにアプリを追加しておく必要もあります。
-実行前に以下の環境変数を登録しておく必要があります。
+Slackを利用する場合、事前にSlackへBotアプリの作成が必要です。  
+投稿するチャンネルのメンバーにアプリを追加しておく必要もあります。  
+実行前に以下の環境変数を登録しておく必要があります。  
 
-SLACK_TOKEN='bot-token'
-SLACK_CHANNEL='channel name'
-SLACK_SECRET_KEY='secret-key'
-SLACK_POST_IMAGE='true'//POSTのONOFF切り替え、IMAGEと書いてあるけどTEXTも抑止します。
+SLACK_TOKEN='bot-token'  
+SLACK_CHANNEL='channel name'  
+SLACK_SECRET_KEY='secret-key'  
+SLACK_POST_IMAGE='true'//POSTのONOFF切り替え、IMAGEと書いてあるけどTEXTも抑止します。  
 
       
