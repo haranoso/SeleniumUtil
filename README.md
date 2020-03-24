@@ -63,6 +63,7 @@ Slackを利用する場合、事前にSlackへBotアプリの作成が必要で�
 SLACK_TOKEN='bot-token'  
 SLACK_CHANNEL='channel name'  
 SLACK_SECRET_KEY='secret-key'  
-SLACK_POST_IMAGE='true'//POSTのONOFF切り替え、IMAGEと書いてあるけどTEXTも抑止します。  
+SLACK_POST_IMAGE='true'//POSTのONOFF切り替え、IMAGEの投稿を抑止します。  
+SLACK_POST_TEXT='true'//POSTのONOFF切り替え、TEXTの投稿を抑止します。  
 
       
