@@ -46,9 +46,15 @@ Salesforceのテストとして利用する場合。
     ★  |  |--hogehoge.js//ここにテストコードなどを配置  
     
 
-上記配置かつ、SFDX Cliインストール済みであれば、テストコード中にTestUtilのメソッドを利用して、SOQLをコールすることができます。    
-`users = u.soql("select Id , Name from Contact order by createdDate desc");    
-console.log(users[0].id);`    
+上記配置かつ、SFDX Cliインストール済みであれば、テストコード中にTestUtilのメソッドを利用して、SOQLをコールすることができます。 
+
+
+    const Utils = require('./lib/TestUtil');
+    let u = new Utils(driver);
+    users = u.soql("select Id , Name from Contact order by createdDate desc");    
+    console.log(users[0].id);    
+    
+
 結果がParse済みのオブジェクトとして取得できます。  
 
 
