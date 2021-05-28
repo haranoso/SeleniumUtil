@@ -45,6 +45,24 @@ Salesforceのテストとして利用する場合。
     ★  |  |--node_modules //　npm installしたら配置される  
     ★  |  |--hogehoge.js//ここにテストコードなどを配置  
     
+    
+    ***  
+## package.json
+| ファイル名 | 説明 |
+| ---- | ---- |
+| @slack/bolt | Slcak投稿用のパッケージ | 
+| chromedriver | Chrome用Web Driver | 
+| date-utils | 日付操作を追加するパッケージ | 
+| expect.js | テスト用フレームワーク。期待値と実際の値の比較結果を出したりするのに利用する。 Jest。現在未使用 | 
+| fs-extra | ファイル、ディレクトリ操作のためのパッケージ | 
+| geckodriver | firefox用Web Driver | 
+| mocha | テスト用フレームワーク。Assertを出したりするのに利用する | 
+| path | ファイルフォルダのパスを取り扱うためのパッケージ | 
+| resemblejs | ２つの画像を比較して差分画像を生成する | 
+| selenium-webdriver | Selenium本体 | 
+| sleep | Sleep処理を入れるためのパッケージ | 
+
+
 
 上記配置かつ、SFDX Cliインストール済みであれば、テストコード中にTestUtilのメソッドを利用して、SOQLをコールすることができます。 
 
